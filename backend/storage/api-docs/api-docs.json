@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Documentação da API do Meu Projeto Base",
+        "description": "Descrição da API com Swagger",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/hello": {
+            "get": {
+                "tags": [
+                    "Exemplos"
+                ],
+                "summary": "Retorna uma mensagem de 'Olá, Mundo!'",
+                "description": "Este é um endpoint de exemplo para testar a documentação.",
+                "operationId": "getHelloWorld",
+                "responses": {
+                    "200": {
+                        "description": "Operação bem-sucedida",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Olá, Mundo!"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Exemplos",
+            "description": "Exemplos"
+        }
+    ]
+}
